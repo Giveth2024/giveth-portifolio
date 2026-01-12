@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Dev | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/9c/73/aa/9c73aa84689939c3a573f624141a871c.jpg" type="image/x-icon">
+    <style>
+        body { background-color: #000000; color: #ffffff; font-family: 'Inter', sans-serif; }
+        .text-gold { color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+        .hover-gold:hover { color: #D4AF37; }
+        .btn-gold { 
+            background-color: #D4AF37; 
+            color: #000000; 
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover { 
+            background-color: #f3cf58; 
+            transform: translateY(-2px);
+        }
+        .card {
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            transition: border 0.3s ease;
+        }
+        .card:hover { border-color: #D4AF37; }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold border-b-2 border-gold">DEV<span class="text-gold">.</span></div>
+        <div class="space-x-6 hidden md:block">
+            <a href="#projects" class="hover-gold transition">Projects</a>
+            <a href="#education" class="hover-gold transition">Education</a>
+            <a href="#about" class="hover-gold transition">About</a>
+            <a href="#contact" class="hover-gold transition">Contact</a>
+        </div>
+        <a href="resume.pdf" download class="btn-gold px-5 py-2 rounded font-semibold text-sm">RESUME</a>
+    </nav>
+
+    <header class="h-[80vh] flex flex-col justify-center items-center text-center px-4">
+        <h2 class="text-gold tracking-widest mb-4 uppercase font-medium">Full-Stack Engineer</h2>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6">Building Scalable <br/> <span class="text-gold">Digital Solutions</span></h1>
+        <p class="max-w-xl text-gray-400 mb-8 text-lg">
+            Self-taught developer specializing in React, Next.js, and Node.js. 
+            Focused on building robust backend systems and intuitive user interfaces.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#projects" class="btn-gold px-8 py-3 rounded font-bold">VIEW WORK</a>
+            <a href="#contact" class="border border-gold text-gold px-8 py-3 rounded font-bold  transition">HIRE ME</a>
+        </div>
+    </header>
+    <section id="about" class="py-24 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gold rounded-2xl opacity-20 group-hover:opacity-40 transition duration-500 blur"></div>
+            
+            <div class="relative bg-zinc-900 rounded-2xl overflow-hidden aspect-square border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=800" 
+                    alt="Your Name - Full Stack Developer" 
+                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black to-transparent">
+                    <p class="text-gold font-bold tracking-widest text-xs flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot"></i> LOCATED IN KAMPALA, UGANDA
+                    </p>
+                </div>
+            </div>
+        </div>
+            <div>
+                <h3 class="text-gold tracking-[0.2em] uppercase text-sm font-bold mb-4">The Developer</h3>
+                <h2 class="text-4xl font-black mb-6">TURNING COMPLEXITY <br/> INTO <span class="text-gold">SIMPLICITY</span></h2>
+                
+                <div class="space-y-4 text-gray-400 leading-relaxed">
+                    <p>
+                        I am a <span class="text-white font-semibold">Self-Taught Full-Stack Developer</span> who thrives at the intersection of logic and creativity. My journey into tech began with a deep curiosity about how the web works, which quickly evolved into a passion for building robust applications using the <span class="text-white">JavaScript ecosystem</span>.
+                    </p>
+                    <p>
+                        I don't just write code; I build solutions. Being self-taught has given me the unique ability to **learn rapidly** and adapt to new technologies—a trait that is essential in the fast-paced world of web development.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-gold"></i>
+                        <span class="text-sm font-bold uppercase tracking-tighter">Clean Architecture</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-gold"></i>
+                        <span class="text-sm font-bold uppercase tracking-tighter">API Optimization</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-gold"></i>
+                        <span class="text-sm font-bold uppercase tracking-tighter">Responsive UI</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-check-circle text-gold"></i>
+                        <span class="text-sm font-bold uppercase tracking-tighter">Agile Learner</span>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <a href="resume.pdf" download class="btn-gold inline-flex items-center gap-3 px-8 py-4 rounded-full font-black text-sm uppercase tracking-widest shadow-lg shadow-gold/10">
+                        Download Resume <i class="fa-solid fa-file-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="stack" class="py-24 bg-[#050505]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-gold tracking-[0.2em] uppercase text-sm font-bold mb-2">Technical Proficiency</h3>
+                <h2 class="text-4xl font-black">MY <span class="text-gold">TOOLBOX</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="card p-8 rounded-2xl border-t-4 border-t-gold">
+                    <div class="flex items-center gap-4 mb-6">
+                        <i class="fa-solid fa-code text-gold text-2xl"></i>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Frontend</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fab fa-html5 text-gold w-5"></i> HTML5 / CSS3
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fab fa-js text-gold w-5"></i> JavaScript (ES6+)
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-wind text-gold w-5"></i> Tailwind CSS
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fab fa-react text-gold w-5"></i> React & Next.js
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card p-8 rounded-2xl border-t-4 border-t-gold">
+                    <div class="flex items-center gap-4 mb-6">
+                        <i class="fa-solid fa-server text-gold text-2xl"></i>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">Backend</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fab fa-node-js text-gold w-5"></i> Node.js
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-gears text-gold w-5"></i> ExpressJS
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-database text-gold w-5"></i> RESTful APIs
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-shield-halved text-gold w-5"></i> Auth Patterns
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card p-8 rounded-2xl border-t-4 border-t-gold">
+                    <div class="flex items-center gap-4 mb-6">
+                        <i class="fa-solid fa-cloud-arrow-up text-gold text-2xl"></i>
+                        <h4 class="text-xl font-bold uppercase tracking-tight">DevOps</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fab fa-git-alt text-gold w-5"></i> Git & GitHub
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-bolt text-gold w-5"></i> Vercel (Frontend)
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-terminal text-gold w-5"></i> Render (Backend)
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-300 hover:text-white transition">
+                            <i class="fa-solid fa-infinity text-gold w-5"></i> CI/CD Workflows
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-12 border-l-4 border-gold pl-4 uppercase tracking-tighter">Featured Projects</h3>
+        
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="card p-6 rounded-xl overflow-hidden flex flex-col">
+                <div class="h-56 bg-zinc-900 rounded-lg mb-6 overflow-hidden border border-zinc-800">
+                    <img src="https://i.pinimg.com/736x/30/0d/58/300d58806dbe17357a19b4690da929a6.jpg" 
+                        alt="E-Commerce API" 
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                
+                <h4 class="text-xl font-bold mb-2">E-Commerce API Service</h4>
+                <p class="text-gray-400 mb-6 text-sm flex-grow">
+                    A robust full-stack application featuring JWT authentication, database schemas for products, and integrated payment gateways.
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="text-[10px] font-bold bg-zinc-800 text-gold px-3 py-1 rounded-full uppercase tracking-wider">Next.js</span>
+                    <span class="text-[10px] font-bold bg-zinc-800 text-gold px-3 py-1 rounded-full uppercase tracking-wider">Node.js</span>
+                    <span class="text-[10px] font-bold bg-zinc-800 text-gold px-3 py-1 rounded-full uppercase tracking-wider">PostgreSQL</span>
+                </div>
+                
+                <div class="flex justify-between items-center border-t border-zinc-800 pt-4">
+                    <a href="#" class="text-gold font-bold text-sm hover:underline flex items-center gap-2">
+                        Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gold transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card p-6 rounded-xl overflow-hidden flex flex-col">
+                <div class="h-56 bg-zinc-900 rounded-lg mb-6 overflow-hidden border border-zinc-800">
+                    <img src="https://i.pinimg.com/736x/9c/68/a3/9c68a38cb056441679a8ff61e5cde73a.jpg" 
+                        alt="Task System" 
+                        class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                
+                <h4 class="text-xl font-bold mb-2">Task Management System</h4>
+                <p class="text-gray-400 mb-6 text-sm flex-grow">
+                    A productivity tool focused on real-time updates using WebSockets and efficient CRUD operations for team collaboration.
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="text-[10px] font-bold bg-zinc-800 text-gold px-3 py-1 rounded-full uppercase tracking-wider">React</span>
+                    <span class="text-[10px] font-bold bg-zinc-800 text-gold px-3 py-1 rounded-full uppercase tracking-wider">Express</span>
+                    <span class="text-[10px] font-bold bg-zinc-800 text-gold px-3 py-1 rounded-full uppercase tracking-wider">MySQL</span>
+                </div>
+                
+                <div class="flex justify-between items-center border-t border-zinc-800 pt-4">
+                    <a href="#" class="text-gold font-bold text-sm hover:underline flex items-center gap-2">
+                        Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gold transition">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="projects.html" class="group inline-flex items-center gap-3 text-white font-bold tracking-[0.2em] text-xs hover:text-gold transition duration-300">
+                VIEW ALL ARCHIVED PROJECTS 
+                <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-[#050505]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-gold tracking-[0.2em] uppercase text-sm font-bold mb-2">My Journey</h3>
+                <h2 class="text-4xl font-black">EDUCATION & <span class="text-gold">CERTS</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card p-6 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center group">
+                    <div class="flex items-center gap-4">
+                        <div class="h-12 w-12 bg-zinc-900 border border-zinc-800 rounded flex items-center justify-center">
+                            <i class="fa-solid fa-graduation-cap text-gold text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold">Full-Stack Web Development</h4>
+                            <p class="text-sm text-gray-400">Udemy • <span class="text-gold italic">In Progress</span></p>
+                        </div>
+                    </div>
+                    <a href="path-to-cert/udemy-cert.pdf" download class="mt-4 md:mt-0 flex items-center gap-2 bg-zinc-900 border border-gold text-gold px-4 py-2 rounded-lg text-sm font-bold transition duration-300">
+                        <i class="fa-solid fa-download"></i> CERT
+                    </a>
+                </div>
+
+                <div class="card p-6 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center group">
+                    <div class="flex items-center gap-4">
+                        <div class="h-12 w-12 bg-zinc-900 border border-zinc-800 rounded flex items-center justify-center">
+                            <i class="fa-solid fa-certificate text-gold text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold">Advanced JavaScript Patterns</h4>
+                            <p class="text-sm text-gray-400">FreeCodeCamp • <span class="text-gray-500">Completed 2025</span></p>
+                        </div>
+                    </div>
+                    <a href="path-to-cert/js-cert.pdf" download class="mt-4 md:mt-0 flex items-center gap-2 bg-zinc-900 border border-gold text-gold px-4 py-2 rounded-lg text-sm font-bold transition duration-300">
+                        <i class="fa-solid fa-download"></i> CERT
+                    </a>
+                </div>
+
+                </div>
+
+            <div class="mt-10 text-center">
+                <p class="text-zinc-500 text-xs italic">All certificates are authentic and verifiable via the download links above.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 max-w-4xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-8 italic">"Solving problems, one <span class="text-gold">commit</span> at a time."</h3>
+        <p class="text-gray-400 leading-relaxed mb-6">
+            I am a self-taught developer who turned a passion for logic into a career in building web applications. 
+            My journey is defined by constant learning and a "get-things-done" attitude. I thrive in environments 
+            where I can build clean codebases and contribute to meaningful projects.
+        </p>
+        <div class="flex justify-center space-x-8 text-sm font-bold">
+            <span class="text-gold uppercase tracking-widest underline underline-offset-8">Problem Solver</span>
+            <span class="text-gold uppercase tracking-widest underline underline-offset-8">Rapid Learner</span>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="bg-gold p-10 md:p-16 rounded-3xl text-black text-center">
+            <h2 class="text-4xl font-black mb-4">READY TO START A PROJECT?</h2>
+            <p class="mb-8 font-medium">Currently available for junior developer roles and freelance opportunities.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="mailto:yourname@gmail.com" class="bg-black text-white px-8 py-3 rounded-full font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> givendarian@gmail.com
+                </a>
+                <!-- <div class="flex gap-4">
+                    <a href="#" class="text-2xl hover:opacity-70"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-2xl hover:opacity-70"><i class="fab fa-linkedin"></i></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="py-20 max-w-4xl mx-auto px-6">
+        <div class="card p-8 md:p-12 rounded-3xl relative overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold opacity-10 blur-3xl"></div>
+            
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold mb-2">Send Me a <span class="text-gold">Message</span></h3>
+                <p class="text-gray-400">Have a question or a job opportunity? I'll get back to you within 24 hours.</p>
+            </div>
+
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold uppercase tracking-widest mb-2 text-gold">Full Name</label>
+                        <input type="text" placeholder="John Doe" 
+                            class="bg-zinc-900 border border-zinc-800 rounded-lg p-4 focus:outline-none focus:border-gold transition text-white">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="text-xs font-bold uppercase tracking-widest mb-2 text-gold">Email Address</label>
+                        <input type="email" placeholder="john@example.com" 
+                            class="bg-zinc-900 border border-zinc-800 rounded-lg p-4 focus:outline-none focus:border-gold transition text-white">
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold uppercase tracking-widest mb-2 text-gold">Subject</label>
+                    <input type="text" placeholder="Job Opportunity" 
+                        class="bg-zinc-900 border border-zinc-800 rounded-lg p-4 focus:outline-none focus:border-gold transition text-white">
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold uppercase tracking-widest mb-2 text-gold">Message</label>
+                    <textarea rows="5" placeholder="Tell me about your project..." 
+                        class="bg-zinc-900 border border-zinc-800 rounded-lg p-4 focus:outline-none focus:border-gold transition text-white resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="btn-gold w-full py-4 rounded-lg font-black uppercase tracking-widest flex items-center justify-center gap-3">
+                    Send Message <i class="fa-solid fa-paper-plane text-sm"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm border-t border-zinc-900">
+        <p>&copy; 2026 Developed by Kyateka Given Ethan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

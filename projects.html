@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Full Stack Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { background-color: #000000; color: #ffffff; font-family: 'Inter', sans-serif; }
+        .text-gold { color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+        .card { 
+            background: #0a0a0a; 
+            border: 1px solid #1a1a1a; 
+            transition: all 0.3s ease; 
+        }
+        .card:hover { border-color: #D4AF37; transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 max-w-7xl mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-[#D4AF37] hover:text-gold transition">
+            <i class="fa-solid fa-arrow-left mr-2"></i>
+        </a>
+        <div class="text-xl font-bold">PROJECT<span class="text-gold">ARCHIVE</span></div>
+    </nav>
+
+    <header class="py-16 px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-black mb-4 uppercase">The <span class="text-gold">Project</span> Vault</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">A complete collection of my development journey, from early scripts to full-stack applications.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="card p-6 rounded-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <i class="fa-solid fa-folder text-gold text-3xl"></i>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-github text-xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-gold"><i class="fa-solid fa-arrow-up-right-from-square text-lg"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Real-time Chat App</h3>
+                    <p class="text-gray-400 text-sm mb-4">A simple WebSocket-based chat room to practice real-time data transfer.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4">
+                    <span class="text-[10px] border border-zinc-700 px-2 py-1 rounded text-zinc-400">Socket.io</span>
+                    <span class="text-[10px] border border-zinc-700 px-2 py-1 rounded text-zinc-400">Node.js</span>
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer class="py-10 text-center border-t border-zinc-900">
+        <p class="text-zinc-600 text-sm italic">Keep building. Keep learning.</p>
+    </footer>
+
+</body>
+</html>
