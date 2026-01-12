@@ -1,10 +1,3 @@
-A professional GitHub `README.md` for your portfolio is crucial because it’s often the first thing a technical recruiter will check to see how you document your work.
-
-Here is a high-quality, professional README designed specifically for your stack and your background as a self-taught developer.
-
----
-
-```markdown
 # 🚀 Full-Stack Developer Portfolio
 
 A modern, high-performance portfolio website built with **HTML5**, **Tailwind CSS**, and **JavaScript**. Designed with a premium Black & Gold aesthetic to showcase my skills in the MERN/Next.js ecosystem and my journey as a self-taught engineer.
